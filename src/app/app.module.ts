@@ -13,8 +13,11 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HabilidadesComponent } from './components/habilidades/habilidades.component';
 import { ProyComponent } from './components/proy/proy.component';
 import { FooterComponent } from './components/footer/footer.component';
-import {HttpClient, HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './components/home/home.component';
+import { LoginComponent } from './components/login/login.component';
+
 
 @NgModule({
   declarations: [
@@ -28,13 +31,15 @@ import { FormsModule } from '@angular/forms';
     ExperienciaComponent,
     HabilidadesComponent,
     ProyComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent,
+    LoginComponent
   ],
   imports:[
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClient,
+    HttpClientModule,
     NgCircleProgressModule.forRoot({}),
   ],
   providers: [],
